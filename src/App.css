@@ -1,0 +1,251 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #004d40, #b2ff59);
+  animation: gradientAnimation 5s ease infinite alternate; 
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: #b1de7f; 
+  color: #fff;
+  text-align: left; 
+  padding: 1rem;
+  display: flex;
+  align-items: center; 
+}
+
+nav {
+  background: linear-gradient(to right, #91bb94 0%, #91bb94 50%, #1b5e20 100%); 
+  text-align: left; 
+}
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out; 
+}
+
+
+nav a:hover {
+  color: #33691e; 
+}
+
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #dcedc8; 
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  background: linear-gradient(to right, #1b5e20 0%, #33691e 50%, #1b5e20 100%); 
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.photo-section {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  width: 60%; 
+}
+
+.galeri-header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 0.5rem; 
+  border-radius: 5px; 
+  font-size: 1.5rem; 
+}
+
+.photo {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  border: 2px solid #333; 
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #8bc34a;
+}
+footer {
+  background-color: #a5d6a7; 
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2.5rem; 
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);  
+  padding: 0.5rem; 
+  border-radius: 5px; 
+}
+
+
+.column-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.column img {
+  width: 100%;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+}
+
+.column p {
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f8f7; 
+  margin: 0; 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}
+
+
+.biography-section {
+  background-color: #fff;
+  color: #1b5e20;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.biography-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.konyaekspres.com/images/haberler/2019/12/kavus-yeni-yil-guzellikler-ve-hayirlar-getirsin.jpg');
+  background-size: cover;
+  background-position: top right; 
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
